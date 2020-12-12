@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4BE258381D40051F99A /* AppDelegate.swift */; };
 		EEAED4C1258381D40051F99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4C0258381D40051F99A /* SceneDelegate.swift */; };
-		EEAED4C3258381D40051F99A /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4C2258381D40051F99A /* ToDoListViewController.swift */; };
 		EEAED4C6258381D40051F99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C4258381D40051F99A /* Main.storyboard */; };
 		EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C7258381D80051F99A /* Assets.xcassets */; };
 		EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C9258381D80051F99A /* LaunchScreen.storyboard */; };
 		EEAED4D4258383930051F99A /* digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4D3258383930051F99A /* digital.ttf */; };
+		EEE3CF9B2583AF2D00BB2156 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */; };
+		EEE3CF9C2583AF2D00BB2156 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */; };
+		EEE3CFA52584CAC300BB2156 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */; };
+		EEE3CFA92584CADB00BB2156 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFA82584CADB00BB2156 /* ViewModel.swift */; };
+		EEE3CFAC2584CAF900BB2156 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */; };
+		EEE3CFAF2584CB1000BB2156 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFAE2584CB1000BB2156 /* CellViewModel.swift */; };
+		EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */; };
+		EEE3CFB72584CC9600BB2156 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */; };
+		EEE3CFC02584D10600BB2156 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */; };
+		EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */; };
+		EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEAED4BB258381D40051F99A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAED4BE258381D40051F99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAED4C0258381D40051F99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEAED4C2258381D40051F99A /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		EEAED4C5258381D40051F99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEAED4C7258381D80051F99A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAED4CA258381D80051F99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAED4CC258381D80051F99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEAED4D3258383930051F99A /* digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital.ttf; sourceTree = "<group>"; };
+		EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EEE3CFA82584CADB00BB2156 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		EEE3CFAE2584CB1000BB2156 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+registerCell.swift"; sourceTree = "<group>"; };
+		EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemTableViewCell.xib; sourceTree = "<group>"; };
+		EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				EEAED4D62583848C0051F99A /* ToDoListViewController */,
-				EEAED4BE258381D40051F99A /* AppDelegate.swift */,
-				EEAED4C0258381D40051F99A /* SceneDelegate.swift */,
-				EEAED4C2258381D40051F99A /* ToDoListViewController.swift */,
-				EEAED4C4258381D40051F99A /* Main.storyboard */,
-				EEAED4C7258381D80051F99A /* Assets.xcassets */,
-				EEAED4C9258381D80051F99A /* LaunchScreen.storyboard */,
+				EEE3CFA32584CA9A00BB2156 /* Helpers */,
+				EEE3CFB12584CB4200BB2156 /* Extensions */,
+				EEE3CF932583AE4D00BB2156 /* Support */,
 				EEAED4D3258383930051F99A /* digital.ttf */,
-				EEAED4CC258381D80051F99A /* Info.plist */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -74,8 +90,86 @@
 		EEAED4D62583848C0051F99A /* ToDoListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EEE3CF922583AE4600BB2156 /* ViewModel */,
+				EEE3CF912583AE3D00BB2156 /* View */,
+				EEE3CFA02584C9EA00BB2156 /* Cell */,
 			);
 			path = ToDoListViewController;
+			sourceTree = "<group>";
+		};
+		EEE3CF912583AE3D00BB2156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */,
+				EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEE3CF922583AE4600BB2156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEE3CF932583AE4D00BB2156 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EEAED4C4258381D40051F99A /* Main.storyboard */,
+				EEAED4C7258381D80051F99A /* Assets.xcassets */,
+				EEAED4C9258381D80051F99A /* LaunchScreen.storyboard */,
+				EEAED4CC258381D80051F99A /* Info.plist */,
+				EEAED4BE258381D40051F99A /* AppDelegate.swift */,
+				EEAED4C0258381D40051F99A /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EEE3CFA02584C9EA00BB2156 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFC32584D11800BB2156 /* View */,
+				EEE3CFC42584D12000BB2156 /* ViewModel */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EEE3CFA32584CA9A00BB2156 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */,
+				EEE3CFA82584CADB00BB2156 /* ViewModel.swift */,
+				EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */,
+				EEE3CFAE2584CB1000BB2156 /* CellViewModel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EEE3CFB12584CB4200BB2156 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEE3CFC32584D11800BB2156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */,
+				EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEE3CFC42584D12000BB2156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */,
 				EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */,
 				EEAED4D4258383930051F99A /* digital.ttf in Resources */,
+				EEE3CF9C2583AF2D00BB2156 /* ToDoListViewController.xib in Resources */,
 				EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */,
 				EEAED4C6258381D40051F99A /* Main.storyboard in Resources */,
 			);
@@ -149,8 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAED4C3258381D40051F99A /* ToDoListViewController.swift in Sources */,
+				EEE3CFC02584D10600BB2156 /* ListItemTableViewCell.swift in Sources */,
+				EEE3CFA92584CADB00BB2156 /* ViewModel.swift in Sources */,
+				EEE3CFB72584CC9600BB2156 /* ToDoViewModel.swift in Sources */,
 				EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */,
+				EEE3CFA52584CAC300BB2156 /* BaseViewController.swift in Sources */,
+				EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */,
+				EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */,
+				EEE3CFAF2584CB1000BB2156 /* CellViewModel.swift in Sources */,
+				EEE3CFAC2584CAF900BB2156 /* ConfigurableView.swift in Sources */,
+				EEE3CF9B2583AF2D00BB2156 /* ToDoListViewController.swift in Sources */,
 				EEAED4C1258381D40051F99A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +404,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DT65SS5ZB;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArtemEmelianov.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +424,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DT65SS5ZB;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArtemEmelianov.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
