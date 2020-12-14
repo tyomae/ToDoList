@@ -13,8 +13,10 @@
 		EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C7258381D80051F99A /* Assets.xcassets */; };
 		EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C9258381D80051F99A /* LaunchScreen.storyboard */; };
 		EEAED4D4258383930051F99A /* digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4D3258383930051F99A /* digital.ttf */; };
-		EEE3CF9B2583AF2D00BB2156 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */; };
-		EEE3CF9C2583AF2D00BB2156 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */; };
+		EEBEF1202587B72E000EA996 /* ItemInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEF11E2587B72E000EA996 /* ItemInfoTableViewCell.swift */; };
+		EEBEF1212587B72E000EA996 /* ItemInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBEF11F2587B72E000EA996 /* ItemInfoTableViewCell.xib */; };
+		EEBEF1242587B743000EA996 /* ItemInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEF1232587B743000EA996 /* ItemInfoCellViewModel.swift */; };
+		EEDA87402587EFAE002C4FA3 /* UIControl+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA873F2587EFAE002C4FA3 /* UIControl+Action.swift */; };
 		EEE3CFA52584CAC300BB2156 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */; };
 		EEE3CFA92584CADB00BB2156 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFA82584CADB00BB2156 /* ViewModel.swift */; };
 		EEE3CFAC2584CAF900BB2156 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */; };
@@ -24,6 +26,23 @@
 		EEE3CFC02584D10600BB2156 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */; };
 		EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */; };
 		EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */; };
+		EEE3CFD22584E1E000BB2156 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFD02584E1E000BB2156 /* ToDoListViewController.swift */; };
+		EEE3CFD32584E1E000BB2156 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CFD12584E1E000BB2156 /* ToDoListViewController.xib */; };
+		EEE3CFD7258516DC00BB2156 /* InputDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFD6258516DC00BB2156 /* InputDatePickerViewModel.swift */; };
+		EEE3CFDB258516FB00BB2156 /* DateInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFDA258516FB00BB2156 /* DateInputViewModel.swift */; };
+		EEE3CFDE2585172700BB2156 /* DateFormatter+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFDD2585172700BB2156 /* DateFormatter+Static.swift */; };
+		EEE3CFE12585177F00BB2156 /* InputDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFE02585177F00BB2156 /* InputDatePickerView.swift */; };
+		EEE3CFE42585182100BB2156 /* DoneToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFE32585182100BB2156 /* DoneToolbar.swift */; };
+		EEE3CFEE25851B3500BB2156 /* ToDoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFEC25851B3500BB2156 /* ToDoInfoViewController.swift */; };
+		EEE3CFEF25851B3500BB2156 /* ToDoInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CFED25851B3500BB2156 /* ToDoInfoViewController.xib */; };
+		EEE3CFF425851B8B00BB2156 /* ToDoInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFF325851B8B00BB2156 /* ToDoInfoViewModel.swift */; };
+		EEE3CFFD2587709800BB2156 /* NonFocusableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFFC2587709800BB2156 /* NonFocusableTextField.swift */; };
+		EEE3D002258770F200BB2156 /* DateInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3D000258770F200BB2156 /* DateInputTableViewCell.swift */; };
+		EEE3D003258770F200BB2156 /* DateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3D001258770F200BB2156 /* DateInputTableViewCell.xib */; };
+		EEECFF152587ED010078B8A8 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECFF142587ED010078B8A8 /* ButtonViewModel.swift */; };
+		EEECFF1D2587ED610078B8A8 /* UIColor+darker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECFF1C2587ED610078B8A8 /* UIColor+darker.swift */; };
+		EEECFF262587EE500078B8A8 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECFF242587EE500078B8A8 /* ButtonTableViewCell.swift */; };
+		EEECFF272587EE500078B8A8 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEECFF252587EE500078B8A8 /* ButtonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +54,10 @@
 		EEAED4CA258381D80051F99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAED4CC258381D80051F99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEAED4D3258383930051F99A /* digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital.ttf; sourceTree = "<group>"; };
-		EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
-		EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		EEBEF11E2587B72E000EA996 /* ItemInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEBEF11F2587B72E000EA996 /* ItemInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEBEF1232587B743000EA996 /* ItemInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoCellViewModel.swift; sourceTree = "<group>"; };
+		EEDA873F2587EFAE002C4FA3 /* UIControl+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Action.swift"; sourceTree = "<group>"; };
 		EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EEE3CFA82584CADB00BB2156 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
@@ -46,6 +67,23 @@
 		EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
 		EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemTableViewCell.xib; sourceTree = "<group>"; };
 		EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFD02584E1E000BB2156 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		EEE3CFD12584E1E000BB2156 /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		EEE3CFD6258516DC00BB2156 /* InputDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDatePickerViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFDA258516FB00BB2156 /* DateInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFDD2585172700BB2156 /* DateFormatter+Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Static.swift"; sourceTree = "<group>"; };
+		EEE3CFE02585177F00BB2156 /* InputDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDatePickerView.swift; sourceTree = "<group>"; };
+		EEE3CFE32585182100BB2156 /* DoneToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneToolbar.swift; sourceTree = "<group>"; };
+		EEE3CFEC25851B3500BB2156 /* ToDoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInfoViewController.swift; sourceTree = "<group>"; };
+		EEE3CFED25851B3500BB2156 /* ToDoInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoInfoViewController.xib; sourceTree = "<group>"; };
+		EEE3CFF325851B8B00BB2156 /* ToDoInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInfoViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFFC2587709800BB2156 /* NonFocusableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonFocusableTextField.swift; sourceTree = "<group>"; };
+		EEE3D000258770F200BB2156 /* DateInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputTableViewCell.swift; sourceTree = "<group>"; };
+		EEE3D001258770F200BB2156 /* DateInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateInputTableViewCell.xib; sourceTree = "<group>"; };
+		EEECFF142587ED010078B8A8 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
+		EEECFF1C2587ED610078B8A8 /* UIColor+darker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+darker.swift"; sourceTree = "<group>"; };
+		EEECFF242587EE500078B8A8 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EEECFF252587EE500078B8A8 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +116,7 @@
 		EEAED4BD258381D40051F99A /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				EEE3CFE625851AF100BB2156 /* ToDoInfoViewController */,
 				EEAED4D62583848C0051F99A /* ToDoListViewController */,
 				EEE3CFA32584CA9A00BB2156 /* Helpers */,
 				EEE3CFB12584CB4200BB2156 /* Extensions */,
@@ -100,8 +139,8 @@
 		EEE3CF912583AE3D00BB2156 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EEE3CF992583AF2D00BB2156 /* ToDoListViewController.swift */,
-				EEE3CF9A2583AF2D00BB2156 /* ToDoListViewController.xib */,
+				EEE3CFD02584E1E000BB2156 /* ToDoListViewController.swift */,
+				EEE3CFD12584E1E000BB2156 /* ToDoListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +178,7 @@
 		EEE3CFA32584CA9A00BB2156 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EEE3CFD5258516CF00BB2156 /* Views */,
 				EEE3CFA42584CAC300BB2156 /* BaseViewController.swift */,
 				EEE3CFA82584CADB00BB2156 /* ViewModel.swift */,
 				EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */,
@@ -150,7 +190,10 @@
 		EEE3CFB12584CB4200BB2156 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EEE3CFDD2585172700BB2156 /* DateFormatter+Static.swift */,
 				EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */,
+				EEECFF1C2587ED610078B8A8 /* UIColor+darker.swift */,
+				EEDA873F2587EFAE002C4FA3 /* UIControl+Action.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +211,76 @@
 			isa = PBXGroup;
 			children = (
 				EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEE3CFD5258516CF00BB2156 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFD6258516DC00BB2156 /* InputDatePickerViewModel.swift */,
+				EEE3CFE02585177F00BB2156 /* InputDatePickerView.swift */,
+				EEE3CFE32585182100BB2156 /* DoneToolbar.swift */,
+				EEE3CFFC2587709800BB2156 /* NonFocusableTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEE3CFE625851AF100BB2156 /* ToDoInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFF125851B4500BB2156 /* View */,
+				EEE3CFF225851B4C00BB2156 /* ViewModel */,
+				EEE3CFF725876F8D00BB2156 /* Cell */,
+			);
+			path = ToDoInfoViewController;
+			sourceTree = "<group>";
+		};
+		EEE3CFF125851B4500BB2156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFEC25851B3500BB2156 /* ToDoInfoViewController.swift */,
+				EEE3CFED25851B3500BB2156 /* ToDoInfoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEE3CFF225851B4C00BB2156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFF325851B8B00BB2156 /* ToDoInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEE3CFF725876F8D00BB2156 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3D0072587A50E00BB2156 /* ViewModel */,
+				EEE3D0062587A50300BB2156 /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EEE3D0062587A50300BB2156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3D000258770F200BB2156 /* DateInputTableViewCell.swift */,
+				EEE3D001258770F200BB2156 /* DateInputTableViewCell.xib */,
+				EEBEF11E2587B72E000EA996 /* ItemInfoTableViewCell.swift */,
+				EEBEF11F2587B72E000EA996 /* ItemInfoTableViewCell.xib */,
+				EEECFF242587EE500078B8A8 /* ButtonTableViewCell.swift */,
+				EEECFF252587EE500078B8A8 /* ButtonTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEE3D0072587A50E00BB2156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEE3CFDA258516FB00BB2156 /* DateInputViewModel.swift */,
+				EEBEF1232587B743000EA996 /* ItemInfoCellViewModel.swift */,
+				EEECFF142587ED010078B8A8 /* ButtonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,9 +344,13 @@
 			files = (
 				EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */,
 				EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */,
+				EEE3CFD32584E1E000BB2156 /* ToDoListViewController.xib in Resources */,
 				EEAED4D4258383930051F99A /* digital.ttf in Resources */,
-				EEE3CF9C2583AF2D00BB2156 /* ToDoListViewController.xib in Resources */,
+				EEBEF1212587B72E000EA996 /* ItemInfoTableViewCell.xib in Resources */,
+				EEE3D003258770F200BB2156 /* DateInputTableViewCell.xib in Resources */,
 				EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */,
+				EEECFF272587EE500078B8A8 /* ButtonTableViewCell.xib in Resources */,
+				EEE3CFEF25851B3500BB2156 /* ToDoInfoViewController.xib in Resources */,
 				EEAED4C6258381D40051F99A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,16 +363,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE3CFC02584D10600BB2156 /* ListItemTableViewCell.swift in Sources */,
+				EEBEF1242587B743000EA996 /* ItemInfoCellViewModel.swift in Sources */,
+				EEE3CFD7258516DC00BB2156 /* InputDatePickerViewModel.swift in Sources */,
 				EEE3CFA92584CADB00BB2156 /* ViewModel.swift in Sources */,
 				EEE3CFB72584CC9600BB2156 /* ToDoViewModel.swift in Sources */,
+				EEDA87402587EFAE002C4FA3 /* UIControl+Action.swift in Sources */,
+				EEBEF1202587B72E000EA996 /* ItemInfoTableViewCell.swift in Sources */,
 				EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */,
+				EEE3CFE42585182100BB2156 /* DoneToolbar.swift in Sources */,
+				EEECFF1D2587ED610078B8A8 /* UIColor+darker.swift in Sources */,
+				EEE3CFD22584E1E000BB2156 /* ToDoListViewController.swift in Sources */,
+				EEE3CFDE2585172700BB2156 /* DateFormatter+Static.swift in Sources */,
+				EEE3CFEE25851B3500BB2156 /* ToDoInfoViewController.swift in Sources */,
+				EEE3CFE12585177F00BB2156 /* InputDatePickerView.swift in Sources */,
+				EEECFF152587ED010078B8A8 /* ButtonViewModel.swift in Sources */,
 				EEE3CFA52584CAC300BB2156 /* BaseViewController.swift in Sources */,
 				EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */,
+				EEE3D002258770F200BB2156 /* DateInputTableViewCell.swift in Sources */,
 				EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */,
+				EEE3CFFD2587709800BB2156 /* NonFocusableTextField.swift in Sources */,
 				EEE3CFAF2584CB1000BB2156 /* CellViewModel.swift in Sources */,
 				EEE3CFAC2584CAF900BB2156 /* ConfigurableView.swift in Sources */,
-				EEE3CF9B2583AF2D00BB2156 /* ToDoListViewController.swift in Sources */,
 				EEAED4C1258381D40051F99A /* SceneDelegate.swift in Sources */,
+				EEECFF262587EE500078B8A8 /* ButtonTableViewCell.swift in Sources */,
+				EEE3CFF425851B8B00BB2156 /* ToDoInfoViewModel.swift in Sources */,
+				EEE3CFDB258516FB00BB2156 /* DateInputViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

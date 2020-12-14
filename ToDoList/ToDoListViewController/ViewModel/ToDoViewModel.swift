@@ -9,20 +9,17 @@ import Foundation
 
 final class ToDoViewModelImpl: ViewModel {
 	
-	struct Section {
-		enum SectionType {
-			case albumInfo
-			case track
-			case copyright
-		}
-		
-		let cellViewModels: [CellViewModel]
-		let type: SectionType
-	}
-	
 	var sections = [Section]()
 	var stateHandler: ((State) -> Void)?
+	
+	struct Section {
+		let date: String
+		let cellViewModels: [ListItemCellViewModelImpl]
+	}
 
+	enum Action {
+		case deleteListItem
+	}
 	
 	enum State {
 		case dataLoaded
@@ -32,7 +29,10 @@ final class ToDoViewModelImpl: ViewModel {
 		
 	}
 	
-
-	
-
+	func process(action: Action) {
+		switch action {
+			case .deleteListItem:
+				return
+		}
+	}
 }

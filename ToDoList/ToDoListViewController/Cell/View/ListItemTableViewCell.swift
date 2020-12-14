@@ -12,6 +12,6 @@ class ListItemTableViewCell: UITableViewCell, ConfigurableView {
 	@IBOutlet weak var toDoItemLabel: UILabel!
 	
 	func configure(with model: ListItemCellViewModel) {
-		
+		self.toDoItemLabel.text = model.itemTitle
 	}
 }

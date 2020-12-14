@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1u-Ge-lZw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9jE-kk-CuD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--To Do List View Controller-->
         <scene sceneID="mrD-2v-lOg">
             <objects>
-                <viewController id="e1u-Ge-lZw" customClass="ToDoListViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="e1u-Ge-lZw" customClass="ToDoListViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6Bh-FY-On1"/>
+                    <connections>
+                        <segue destination="oQC-oY-KdY" kind="presentation" id="95t-KJ-uKp"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3e-bP-XkQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="94"/>
+            <point key="canvasLocation" x="1842.0289855072465" y="93.75"/>
+        </scene>
+        <!--To Do Info View Controller-->
+        <scene sceneID="nbc-Ip-xTL">
+            <objects>
+                <viewController id="oQC-oY-KdY" customClass="ToDoInfoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7B5-CX-mw0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zC-a5-Zkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626.0869565217395" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Bm-BH-LIk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9jE-kk-CuD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pBV-n7-SA8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e1u-Ge-lZw" kind="relationship" relationship="rootViewController" id="qlG-a3-9kP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aE4-i6-JLt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
