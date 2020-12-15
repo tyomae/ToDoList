@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,32 +14,39 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="ItemInfoTableViewCell" customModule="ToDoList" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1on-Ae-gLa">
-                        <rect key="frame" x="10" y="10" width="300" height="90"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPo-xW-3E8">
+                        <rect key="frame" x="10" y="10" width="300" height="50"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="p1y-31-Hm0"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="1on-Ae-gLa" secondAttribute="bottom" constant="10" id="Lk7-T6-cb0"/>
-                    <constraint firstItem="1on-Ae-gLa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Sdu-AI-pZj"/>
-                    <constraint firstAttribute="trailing" secondItem="1on-Ae-gLa" secondAttribute="trailing" constant="10" id="VNk-DK-i94"/>
-                    <constraint firstItem="1on-Ae-gLa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aaM-1c-fOe"/>
+                    <constraint firstAttribute="trailing" secondItem="VPo-xW-3E8" secondAttribute="trailing" constant="10" id="7Yu-BD-eb0"/>
+                    <constraint firstAttribute="bottom" secondItem="VPo-xW-3E8" secondAttribute="bottom" constant="10" id="VjX-SY-kgp"/>
+                    <constraint firstItem="VPo-xW-3E8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dUX-eZ-qzi"/>
+                    <constraint firstItem="VPo-xW-3E8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rTa-OO-2kt"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="toDoTextField" destination="1on-Ae-gLa" id="nLj-Mv-DOr"/>
+                <outlet property="todoTextView" destination="VPo-xW-3E8" id="5JK-Jk-BmI"/>
             </connections>
             <point key="canvasLocation" x="2.8985507246376816" y="125.89285714285714"/>
         </tableViewCell>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

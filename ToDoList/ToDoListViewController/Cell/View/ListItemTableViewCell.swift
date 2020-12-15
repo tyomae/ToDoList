@@ -9,9 +9,10 @@ import UIKit
 
 class ListItemTableViewCell: UITableViewCell, ConfigurableView {
 
-	@IBOutlet weak var toDoItemLabel: UILabel!
+	@IBOutlet weak var toDoTitleLabel: UILabel!
+	@IBOutlet weak var toDoNoteLabel: UILabel!
 	
 	func configure(with model: ListItemCellViewModel) {
-		self.toDoItemLabel.text = model.itemTitle
+		self.toDoTitleLabel.text = model.itemTitle
 	}
 }

@@ -7,25 +7,21 @@
 
 import UIKit
 
-protocol ItemInfoCellViewModel: UITextFieldDelegate, CellViewModel {
-	var itemTitle: String? { get }
+protocol ItemInfoCellViewModel: UITextViewDelegate, CellViewModel {
+	var itemInfo: String { get }
 }
 
 final class ItemInfoCellViewModelImpl: NSObject, ItemInfoCellViewModel {
-	var itemTitle: String?
+	var itemInfo: String = ""
 	
-	func textFieldDidBeginEditing(_ textField: UITextField) {
-		textField.textColor = .systemIndigo
-		textField.backgroundColor = .clear
-		textField.inputAccessoryView = DoneToolbar(activeControl: textField)
+	func textViewDidBeginEditing(_ textView: UITextView) {
+		textView.textColor = .systemIndigo
+		textView.backgroundColor = .clear
 	}
 	
-	func textFieldDidEndEditing(_ textField: UITextField) {
-		textField.backgroundColor = .systemGray5
-		textField.textColor = .black
-		self.itemTitle = textField.text
+	func textViewDidEndEditing(_ textView: UITextView) {
+		textView.backgroundColor = .systemGray5
+		textView.textColor = .black
+		self.itemInfo = textView.text
 	}
-//	var itemTitle: String
-//	var itemNote: String
-
 }

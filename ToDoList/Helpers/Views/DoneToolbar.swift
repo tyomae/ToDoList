@@ -8,7 +8,7 @@
 import UIKit
 
 class DoneToolbar: UIToolbar {
-	weak var activeControl: UIControl?
+	weak var activeControl: UIView?
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -20,7 +20,7 @@ class DoneToolbar: UIToolbar {
 		self.commonInit()
 	}
 
-	init(activeControl: UIControl) {
+	init(activeControl: UIView) {
 		super.init(frame: .zero)
 		self.activeControl = activeControl
 		self.commonInit()
@@ -37,6 +37,6 @@ class DoneToolbar: UIToolbar {
 
 	@objc
 	private func done() {
-		self.activeControl?.resignFirstResponder()
+		self.activeControl?.endEditing(true)
 	}
 }

@@ -38,27 +38,13 @@ final class ToDoInfoViewModelImpl: ViewModel {
 		self.stateHandler?(.dataLoaded)
 	}
 	
-//	private func addListItem(title: String) {
-//		
-//		//TODO: delete
-////		self.sections.append(Section(date: "\(Date())", cellViewModels: [ListItemCellViewModelImpl(itemTitle: title)]))
-//		self.addItemToDB()
-//		self.stateHandler?(.dataLoaded)
-//	}
-	
 	private func addItemToDB() {
-//		self.dateViewModel.selectedDate
-//		
-//		let diaryEntry = DiaryEntryEntity(
-//			smokedObjectType: smokedObject,
-//			smokedCount: smokedCount,
-//			entryDate: self.dateViewModel.selectedDate,
-//			desireToSmoke: Int(self.smokeDesireViewModel.currentValue.rounded()),
-//			cravingsCount: Int(self.cravingsViewModel.currentValue)
-//		)
-//		realmWrite {
-//			mainRealm.add(diaryEntry)
-//		}
+		let itemInfoEntry = ToDoItemEntity (date: self.dateViewModel.selectedDate,
+											itemTitle: self.itemTitleViewModel.itemInfo,
+											itemNote: self.itemNoteViewModel.itemInfo)
+		realmWrite {
+			mainRealm.add(itemInfoEntry)
+		}
 		self.stateHandler?(.allEntriesCorrect)
 	}
 }

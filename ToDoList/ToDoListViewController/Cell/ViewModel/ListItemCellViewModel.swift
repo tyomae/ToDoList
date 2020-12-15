@@ -9,12 +9,15 @@ import Foundation
 
 protocol ListItemCellViewModel {
 	var itemTitle: String { get }
+	var itemNote: String { get }
 }
 
 final class ListItemCellViewModelImpl: ListItemCellViewModel, CellViewModel {
 	let itemTitle: String
+	let itemNote: String
 	
-	init(itemTitle: String) {
+	init(itemTitle: String, itemNote: String) {
 		self.itemTitle = itemTitle
+		self.itemNote = itemNote
 	}
 }
