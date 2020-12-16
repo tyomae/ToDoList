@@ -39,7 +39,10 @@ final class ToDoInfoViewModelImpl: ViewModel {
 	}
 	
 	private func addItemToDB() {
-		let itemInfoEntry = ToDoItemEntity (date: self.dateViewModel.selectedDate,
+		if self.itemTitleViewModel.itemInfo.isEmpty {
+			self.itemTitleViewModel.itemInfo = "New To-Do"
+		}
+		let itemInfoEntry = ToDoItemEntity (stringDate: self.dateViewModel.formattedStringValue,
 											itemTitle: self.itemTitleViewModel.itemInfo,
 											itemNote: self.itemNoteViewModel.itemInfo)
 		realmWrite {

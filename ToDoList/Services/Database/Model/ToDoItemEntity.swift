@@ -10,13 +10,13 @@ import RealmSwift
 
 class ToDoItemEntity: Object {
 	@objc dynamic var id: String = UUID().uuidString
-	@objc dynamic var date = Date()
+	@objc dynamic var stringDate: String = ""
 	@objc dynamic var itemTitle: String = ""
 	@objc dynamic var itemNote: String = ""
 
-	convenience init(date: Date, itemTitle: String, itemNote: String) {
+	convenience init(stringDate: String, itemTitle: String, itemNote: String) {
 		self.init()
-		self.date = date
+		self.stringDate = stringDate
 		self.itemTitle = itemTitle
 		self.itemNote = itemNote
 	}

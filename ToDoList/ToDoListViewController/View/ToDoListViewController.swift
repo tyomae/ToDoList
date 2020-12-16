@@ -28,12 +28,12 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		
 		self.title = "To-Do-List"
 		self.tableView.dataSource = self
 		self.tableView.delegate = self
 	}
-
+	
 	override func setupViewModel() {
 		self.viewModel = ToDoViewModelImpl()
 	}
@@ -46,8 +46,6 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	}
 	
 	@IBAction func addListItem(_ sender: UIButton) {
-		//TODO: delete
-//		self.showAddCounterAlert()
 		self.openInfoItemVC()
 	}
 	
@@ -75,7 +73,24 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		self.tableView.deselectRow(at: indexPath, animated: true)
-		self.openInfoItemVC()
+		// TODO: delete
+		
+		let cell: ListItemTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+	}
+	
+	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+		
+		if let currentToDoItem = self.viewModel.getItembyIndexPath(indexPath: indexPath) {
+			let contextItem: UIContextualAction
+			contextItem = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in
+				self.viewModel.process(action: .deleteItem(id: currentToDoItem.id))
+				
+			}
+			let swipeActions = UISwipeActionsConfiguration(actions: [contextItem])
+			
+			return swipeActions
+		}
+		return nil
 	}
 	
 	private func openInfoItemVC() {
@@ -83,29 +98,6 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 		let navigationController = UINavigationController(rootViewController: vc)
 		present(navigationController, animated: true, completion: nil)
 	}
-
-	
-	// TODO: delete or not
-//	private func showAddCounterAlert() {
-//		let alertController = UIAlertController(title: "Add New To Do", message: "", preferredStyle: UIAlertController.Style.alert)
-//		alertController.view.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-//		alertController.addTextField { (textField : UITextField!) -> Void in
-//			textField.placeholder = "Enter what you shold to do"
-//		}
-//		let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
-//			guard let textField  = alertController.textFields?.first else { return }
-//			guard let text = textField.text, !text.isEmpty else { return }
-////			self.addListItem(title: text)
-//			self.viewModel.process(action: .addListItem(itemTitle: text))
-//		})
-//		let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.destructive, handler: {
-//			(action : UIAlertAction!) -> Void in })
-//
-//		alertController.addAction(cancelAction)
-//		alertController.addAction(saveAction)
-//
-//		self.present(alertController, animated: true, completion: nil)
-//	}
 }
 
 
