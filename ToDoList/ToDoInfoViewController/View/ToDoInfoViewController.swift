@@ -18,7 +18,7 @@ class ToDoInfoViewController: BaseViewController<ToDoInfoViewModelImpl>, UITable
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.title = "Details"
+		self.title = R.string.localizable.details()
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		

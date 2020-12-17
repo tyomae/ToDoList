@@ -6,6 +6,6 @@
 //
 
 import Foundation
-//TODO : удалить еесли не используется
+
 /// A type for union all Cell ViewModels
 protocol CellViewModel { }

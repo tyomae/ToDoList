@@ -14,12 +14,13 @@
 		EE18B6A5258904F8009D4D15 /* ToDoItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18B6A4258904F8009D4D15 /* ToDoItemEntity.swift */; };
 		EE18B6B425892C7F009D4D15 /* ToDoItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */; };
 		EE69BE1B258B9E58008CD271 /* Date+StartOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BE1A258B9E58008CD271 /* Date+StartOfDay.swift */; };
+		EE69BE28258BC304008CD271 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BE27258BC304008CD271 /* R.generated.swift */; };
+		EE69BE30258BC775008CD271 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE69BE2F258BC775008CD271 /* Localizable.strings */; };
 		EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4BE258381D40051F99A /* AppDelegate.swift */; };
 		EEAED4C1258381D40051F99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4C0258381D40051F99A /* SceneDelegate.swift */; };
 		EEAED4C6258381D40051F99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C4258381D40051F99A /* Main.storyboard */; };
 		EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C7258381D80051F99A /* Assets.xcassets */; };
 		EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C9258381D80051F99A /* LaunchScreen.storyboard */; };
-		EEAED4D4258383930051F99A /* digital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4D3258383930051F99A /* digital.ttf */; };
 		EEBEF1202587B72E000EA996 /* ItemInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEF11E2587B72E000EA996 /* ItemInfoTableViewCell.swift */; };
 		EEBEF1212587B72E000EA996 /* ItemInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBEF11F2587B72E000EA996 /* ItemInfoTableViewCell.xib */; };
 		EEBEF1242587B743000EA996 /* ItemInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBEF1232587B743000EA996 /* ItemInfoCellViewModel.swift */; };
@@ -62,6 +63,8 @@
 		EE18B6A4258904F8009D4D15 /* ToDoItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemEntity.swift; sourceTree = "<group>"; };
 		EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemService.swift; sourceTree = "<group>"; };
 		EE69BE1A258B9E58008CD271 /* Date+StartOfDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+StartOfDay.swift"; sourceTree = "<group>"; };
+		EE69BE27258BC304008CD271 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = ToDoList/R.generated.swift; sourceTree = "<group>"; };
+		EE69BE2F258BC775008CD271 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EEAED4BB258381D40051F99A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAED4BE258381D40051F99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAED4C0258381D40051F99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		EEAED4C7258381D80051F99A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEAED4CA258381D80051F99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAED4CC258381D80051F99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEAED4D3258383930051F99A /* digital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = digital.ttf; sourceTree = "<group>"; };
 		EEBEF11E2587B72E000EA996 /* ItemInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoTableViewCell.swift; sourceTree = "<group>"; };
 		EEBEF11F2587B72E000EA996 /* ItemInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemInfoTableViewCell.xib; sourceTree = "<group>"; };
 		EEBEF1232587B743000EA996 /* ItemInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoCellViewModel.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		EE18B6972589043F009D4D15 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */,
 				EE18B6982589046A009D4D15 /* Database */,
 			);
 			path = Services;
@@ -142,7 +145,6 @@
 		EE18B6982589046A009D4D15 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */,
 				EE18B6A3258904C6009D4D15 /* Model */,
 				EE18B69925890492009D4D15 /* RealmController.swift */,
 				EE18B69D258904A3009D4D15 /* Realm+WriteFunctions.swift */,
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				EEAED4BD258381D40051F99A /* ToDoList */,
+				EE69BE27258BC304008CD271 /* R.generated.swift */,
 				EEAED4BC258381D40051F99A /* Products */,
 				2DAF6A705CC4EC93DC5803C3 /* Pods */,
 				0E8D9D8684B4A5F1BB6714C9 /* Frameworks */,
@@ -186,7 +189,6 @@
 				EEE3CFA32584CA9A00BB2156 /* Helpers */,
 				EEE3CFB12584CB4200BB2156 /* Extensions */,
 				EEE3CF932583AE4D00BB2156 /* Support */,
-				EEAED4D3258383930051F99A /* digital.ttf */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -227,6 +229,7 @@
 				EEAED4CC258381D80051F99A /* Info.plist */,
 				EEAED4BE258381D40051F99A /* AppDelegate.swift */,
 				EEAED4C0258381D40051F99A /* SceneDelegate.swift */,
+				EE69BE2F258BC775008CD271 /* Localizable.strings */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildConfigurationList = EEAED4CF258381D80051F99A /* Build configuration list for PBXNativeTarget "ToDoList" */;
 			buildPhases = (
 				958AE72B4335C4698C7150C2 /* [CP] Check Pods Manifest.lock */,
+				EE69BE24258BC1D2008CD271 /* R.swift */,
 				EEAED4B7258381D40051F99A /* Sources */,
 				EEAED4B8258381D40051F99A /* Frameworks */,
 				EEAED4B9258381D40051F99A /* Resources */,
@@ -413,9 +417,9 @@
 				EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */,
 				EEAED4CB258381D80051F99A /* LaunchScreen.storyboard in Resources */,
 				EEE3CFD32584E1E000BB2156 /* ToDoListViewController.xib in Resources */,
-				EEAED4D4258383930051F99A /* digital.ttf in Resources */,
 				EEBEF1212587B72E000EA996 /* ItemInfoTableViewCell.xib in Resources */,
 				EEE3D003258770F200BB2156 /* DateInputTableViewCell.xib in Resources */,
+				EE69BE30258BC775008CD271 /* Localizable.strings in Resources */,
 				EEAED4C8258381D80051F99A /* Assets.xcassets in Resources */,
 				EEECFF272587EE500078B8A8 /* ButtonTableViewCell.xib in Resources */,
 				EEE3CFEF25851B3500BB2156 /* ToDoInfoViewController.xib in Resources */,
@@ -465,6 +469,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE69BE24258BC1D2008CD271 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/$PRODUCT_NAME/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/$PRODUCT_NAME/R.generated.swift\"\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -492,6 +516,7 @@
 				EE18B6A5258904F8009D4D15 /* ToDoItemEntity.swift in Sources */,
 				EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */,
 				EEE3D002258770F200BB2156 /* DateInputTableViewCell.swift in Sources */,
+				EE69BE28258BC304008CD271 /* R.generated.swift in Sources */,
 				EE69BE1B258B9E58008CD271 /* Date+StartOfDay.swift in Sources */,
 				EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */,
 				EEE3CFFD2587709800BB2156 /* NonFocusableTextField.swift in Sources */,

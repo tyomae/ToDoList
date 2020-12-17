@@ -16,20 +16,14 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	}
 	@IBOutlet weak var emptyListLabel: UILabel! {
 		didSet {
-			self.emptyListLabel.isHidden = true
-		}
-	}
-	@IBOutlet weak var titleView: UIView! {
-		didSet {
-			titleView.layer.cornerRadius = 26
-			titleView.clipsToBounds = true
+			self.emptyListLabel.text = R.string.localizable.empty_list()
 		}
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.title = "To-Do-List"
+		self.title = R.string.localizable.to_do_list()
 		self.tableView.dataSource = self
 		self.tableView.delegate = self
 	}
@@ -42,6 +36,7 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 		switch state {
 			case .dataLoaded:
 				self.tableView.reloadData()
+				self.emptyListLabel.isHidden = !viewModel.toDoItems.isEmpty
 		}
 	}
 	
@@ -50,8 +45,7 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 													 date: Date(),
 													 itemTitle: "",
 													 itemNote: "",
-													 isDone: false),
-							isEditing: false)
+													 isDone: false))
 	}
 	
 	// MARK: - UITableViewDataSource
@@ -86,11 +80,10 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		
 		if let currentToDoItem = self.viewModel.getItembyIndexPath(indexPath: indexPath) {
-			let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, _ in
-				self.openInfoItemVC(todoItem: currentToDoItem,
-									isEditing: true)
+			let editAction = UIContextualAction(style: .normal, title: R.string.localizable.edit()) { _, _, _ in
+				self.openInfoItemVC(todoItem: currentToDoItem)
 			}
-			let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in
+			let deleteAction = UIContextualAction(style: .destructive, title: R.string.localizable.delete()) { _,_,_ in
 				self.viewModel.process(action: .deleteItem(id: currentToDoItem.id))
 			}
 			let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
@@ -100,10 +93,9 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 		return nil
 	}
 	
-	private func openInfoItemVC(todoItem: ToDoItemEntity, isEditing: Bool) {
+	private func openInfoItemVC(todoItem: ToDoItemEntity) {
 		let vc = ToDoInfoViewController()
-		let viewModel = ToDoInfoViewModelImpl(toDoItem: todoItem,
-											  isEditing: isEditing)
+		let viewModel = ToDoInfoViewModelImpl(toDoItem: todoItem)
 		vc.viewModel = viewModel
 		let navigationController = UINavigationController(rootViewController: vc)
 		present(navigationController, animated: true, completion: nil)

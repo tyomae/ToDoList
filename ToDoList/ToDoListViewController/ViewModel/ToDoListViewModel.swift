@@ -35,7 +35,6 @@ final class ToDoViewModelImpl: ViewModel {
 			self?.getSections()
 			self?.stateHandler?(.dataLoaded)
 		}
-		self.stateHandler?(.dataLoaded)
 	}
 	
 	func process(action: Action) {

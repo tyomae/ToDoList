@@ -10,7 +10,6 @@ final class ToDoInfoViewModelImpl: ViewModel {
 	
 	var sections = [Section]()
 	var stateHandler: ((State) -> Void)?
-	var isEditing: Bool
 	private var toDoItemService = ToDoItemServiceImpl()
 	
 	struct Section {
@@ -28,29 +27,28 @@ final class ToDoInfoViewModelImpl: ViewModel {
 	private var itemNoteViewModel = ItemInfoCellViewModelImpl()
 	private var addEntryViewModel: ButtonViewModel!
 	
-	init(toDoItem: ToDoItemEntity, isEditing: Bool) {
-		self.isEditing = isEditing
+	init(toDoItem: ToDoItemEntity) {
 		
-		dateViewModel.selectedDate = toDoItem.date
-		itemTitleViewModel.itemInfo = toDoItem.itemTitle
-		itemNoteViewModel.itemInfo = toDoItem.itemNote
+		self.dateViewModel.selectedDate = toDoItem.date
+		self.itemTitleViewModel.itemInfo = toDoItem.itemTitle
+		self.itemNoteViewModel.itemInfo = toDoItem.itemNote
 		
-		self.addEntryViewModel = ButtonViewModelImpl(title: "TO DO") { [weak self] in
+		self.addEntryViewModel = ButtonViewModelImpl(title: R.string.localizable.to_do()) { [weak self] in
 			self?.addItemToDB(id: toDoItem.id)
 		}
 		
 		self.sections = [
-			Section(title: "Choose date", cellViewModels: [dateViewModel]),
-			Section(title: "What you want to do", cellViewModels: [itemTitleViewModel]),
-			Section(title: "Note", cellViewModels: [itemNoteViewModel]),
-			Section(title: nil, cellViewModels: [addEntryViewModel])
+			Section(title: R.string.localizable.choose_date(), cellViewModels: [self.dateViewModel]),
+			Section(title: R.string.localizable.what_you_want_to_do(), cellViewModels: [self.itemTitleViewModel]),
+			Section(title: R.string.localizable.note(), cellViewModels: [self.itemNoteViewModel]),
+			Section(title: nil, cellViewModels: [self.addEntryViewModel])
 		]
 		self.stateHandler?(.dataLoaded)
 	}
 	
 	private func addItemToDB(id: String) {
 		if self.itemTitleViewModel.itemInfo.isEmpty {
-			self.itemTitleViewModel.itemInfo = "New To-Do"
+			self.itemTitleViewModel.itemInfo = R.string.localizable.new_to_do()
 		}
 				
 		let itemInfoEntry = ToDoItemEntity (id: id,
