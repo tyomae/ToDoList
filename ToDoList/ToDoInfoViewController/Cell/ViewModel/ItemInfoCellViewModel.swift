@@ -14,6 +14,10 @@ protocol ItemInfoCellViewModel: UITextViewDelegate, CellViewModel {
 final class ItemInfoCellViewModelImpl: NSObject, ItemInfoCellViewModel {
 	var itemInfo: String = ""
 	
+//	init(itemInfo: String = "") {
+//		self.itemInfo = itemInfo
+//	}
+	
 	func textViewDidBeginEditing(_ textView: UITextView) {
 		textView.textColor = .systemIndigo
 		textView.backgroundColor = .clear

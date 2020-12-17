@@ -21,5 +21,6 @@ class ItemInfoTableViewCell: UITableViewCell {
 
 	func configure(with model: ItemInfoCellViewModel) {
 		self.todoTextView.delegate = model
+		self.todoTextView.text = model.itemInfo
 	}
 }

@@ -25,10 +25,6 @@ class ToDoInfoViewController: BaseViewController<ToDoInfoViewModelImpl>, UITable
 		self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(closeVC))
 	}
 	
-	override func setupViewModel() {
-		self.viewModel = ToDoInfoViewModelImpl()
-	}
-	
 	override func processViewModel(state: ToDoInfoViewModelImpl.State) {
 		switch state {
 			case .dataLoaded:

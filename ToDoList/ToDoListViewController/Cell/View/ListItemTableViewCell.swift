@@ -15,5 +15,10 @@ class ListItemTableViewCell: UITableViewCell, ConfigurableView {
 	func configure(with model: ListItemCellViewModel) {
 		self.toDoTitleLabel.text = model.itemTitle
 		self.toDoNoteLabel.text = model.itemNote
+		if model.isDone {
+			self.accessoryType = .checkmark
+		} else {
+			self.accessoryType = .none
+		}
 	}
 }

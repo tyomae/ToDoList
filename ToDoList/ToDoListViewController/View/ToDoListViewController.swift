@@ -46,7 +46,12 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	}
 	
 	@IBAction func addListItem(_ sender: UIButton) {
-		self.openInfoItemVC()
+		self.openInfoItemVC(todoItem: ToDoItemEntity(id: UUID().uuidString,
+													 date: Date(),
+													 itemTitle: "",
+													 itemNote: "",
+													 isDone: false),
+							isEditing: false)
 	}
 	
 	// MARK: - UITableViewDataSource
@@ -73,28 +78,33 @@ class ToDoListViewController: BaseViewController<ToDoViewModelImpl>, UITableView
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		self.tableView.deselectRow(at: indexPath, animated: true)
-		// TODO: delete
-		
-		let cell: ListItemTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+		if let currentToDoItem = self.viewModel.getItembyIndexPath(indexPath: indexPath) {
+			self.viewModel.process(action: .toggleIsDone(toDoItemEntity: currentToDoItem))
+		}
 	}
 	
 	func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 		
 		if let currentToDoItem = self.viewModel.getItembyIndexPath(indexPath: indexPath) {
-			let contextItem: UIContextualAction
-			contextItem = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in
-				self.viewModel.process(action: .deleteItem(id: currentToDoItem.id))
-				
+			let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, _ in
+				self.openInfoItemVC(todoItem: currentToDoItem,
+									isEditing: true)
 			}
-			let swipeActions = UISwipeActionsConfiguration(actions: [contextItem])
+			let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in
+				self.viewModel.process(action: .deleteItem(id: currentToDoItem.id))
+			}
+			let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
 			
 			return swipeActions
 		}
 		return nil
 	}
 	
-	private func openInfoItemVC() {
+	private func openInfoItemVC(todoItem: ToDoItemEntity, isEditing: Bool) {
 		let vc = ToDoInfoViewController()
+		let viewModel = ToDoInfoViewModelImpl(toDoItem: todoItem,
+											  isEditing: isEditing)
+		vc.viewModel = viewModel
 		let navigationController = UINavigationController(rootViewController: vc)
 		present(navigationController, animated: true, completion: nil)
 	}

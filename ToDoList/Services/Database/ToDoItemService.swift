@@ -13,6 +13,7 @@ protocol ToDoItemService {
 	func removeToDoFromDB(id: String)
 	func addListener(handler: @escaping (() -> Void))
 	func getToDoItems() -> [ToDoItemEntity]
+	func toggleItemIsDone(toDoItem: ToDoItemEntity)
 }
 
 class ToDoItemServiceImpl: ToDoItemService {
@@ -32,11 +33,16 @@ class ToDoItemServiceImpl: ToDoItemService {
 		self.notificationToken?.invalidate()
 	}
 	
-	func addItemToDB(toDoItem: ToDoItemEntity) {
-		let toDoItemEntity = toDoItem
-		realmWrite {
-			mainRealm.add(toDoItemEntity)
+	func toggleItemIsDone(toDoItem: ToDoItemEntity) {
+			realmWrite {
+				toDoItem.isDone = !toDoItem.isDone
+			}
 		}
+	
+	func addItemToDB(toDoItem: ToDoItemEntity) {
+			realmWrite {
+				mainRealm.add(toDoItem, update: .modified)
+			}
 	}
 	
 	func removeToDoFromDB(id: String) {
@@ -47,12 +53,9 @@ class ToDoItemServiceImpl: ToDoItemService {
 		}
 	}
 	
-	
 	func getToDoItems() -> [ToDoItemEntity] {
 		var todoItems = [ToDoItemEntity]()
-		let sortedToDoItems = Array(self.savedToDoItems).sorted { (savedItem1, savedItem2) -> Bool in
-			return savedItem1.stringDate < savedItem2.stringDate
-		}
+		let sortedToDoItems = Array(self.savedToDoItems).sorted(by: { $0.date.compare($1.date) == .orderedDescending })
 		for toDoItem in sortedToDoItems {
 			todoItems.append(toDoItem)
 		}

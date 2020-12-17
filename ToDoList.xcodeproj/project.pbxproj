@@ -13,6 +13,7 @@
 		EE18B6A1258904B8009D4D15 /* Realm+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18B6A0258904B8009D4D15 /* Realm+Notifications.swift */; };
 		EE18B6A5258904F8009D4D15 /* ToDoItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18B6A4258904F8009D4D15 /* ToDoItemEntity.swift */; };
 		EE18B6B425892C7F009D4D15 /* ToDoItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */; };
+		EE69BE1B258B9E58008CD271 /* Date+StartOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BE1A258B9E58008CD271 /* Date+StartOfDay.swift */; };
 		EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4BE258381D40051F99A /* AppDelegate.swift */; };
 		EEAED4C1258381D40051F99A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED4C0258381D40051F99A /* SceneDelegate.swift */; };
 		EEAED4C6258381D40051F99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAED4C4258381D40051F99A /* Main.storyboard */; };
@@ -28,7 +29,7 @@
 		EEE3CFAC2584CAF900BB2156 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */; };
 		EEE3CFAF2584CB1000BB2156 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFAE2584CB1000BB2156 /* CellViewModel.swift */; };
 		EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */; };
-		EEE3CFB72584CC9600BB2156 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */; };
+		EEE3CFB72584CC9600BB2156 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFB62584CC9600BB2156 /* ToDoListViewModel.swift */; };
 		EEE3CFC02584D10600BB2156 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */; };
 		EEE3CFC12584D10600BB2156 /* ListItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */; };
 		EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */; };
@@ -60,6 +61,7 @@
 		EE18B6A0258904B8009D4D15 /* Realm+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Notifications.swift"; sourceTree = "<group>"; };
 		EE18B6A4258904F8009D4D15 /* ToDoItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemEntity.swift; sourceTree = "<group>"; };
 		EE18B6B325892C7F009D4D15 /* ToDoItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemService.swift; sourceTree = "<group>"; };
+		EE69BE1A258B9E58008CD271 /* Date+StartOfDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+StartOfDay.swift"; sourceTree = "<group>"; };
 		EEAED4BB258381D40051F99A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAED4BE258381D40051F99A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEAED4C0258381D40051F99A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		EEE3CFAB2584CAF900BB2156 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		EEE3CFAE2584CB1000BB2156 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+registerCell.swift"; sourceTree = "<group>"; };
-		EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		EEE3CFB62584CC9600BB2156 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
 		EEE3CFBE2584D10600BB2156 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
 		EEE3CFBF2584D10600BB2156 /* ListItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemTableViewCell.xib; sourceTree = "<group>"; };
 		EEE3CFC52584D14E00BB2156 /* ListItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellViewModel.swift; sourceTree = "<group>"; };
@@ -211,7 +213,7 @@
 		EEE3CF922583AE4600BB2156 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EEE3CFB62584CC9600BB2156 /* ToDoViewModel.swift */,
+				EEE3CFB62584CC9600BB2156 /* ToDoListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 				EEE3CFB22584CB6800BB2156 /* UICollectionView+registerCell.swift */,
 				EEECFF1C2587ED610078B8A8 /* UIColor+darker.swift */,
 				EEDA873F2587EFAE002C4FA3 /* UIControl+Action.swift */,
+				EE69BE1A258B9E58008CD271 /* Date+StartOfDay.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -473,7 +476,7 @@
 				EEBEF1242587B743000EA996 /* ItemInfoCellViewModel.swift in Sources */,
 				EEE3CFD7258516DC00BB2156 /* InputDatePickerViewModel.swift in Sources */,
 				EEE3CFA92584CADB00BB2156 /* ViewModel.swift in Sources */,
-				EEE3CFB72584CC9600BB2156 /* ToDoViewModel.swift in Sources */,
+				EEE3CFB72584CC9600BB2156 /* ToDoListViewModel.swift in Sources */,
 				EEDA87402587EFAE002C4FA3 /* UIControl+Action.swift in Sources */,
 				EEBEF1202587B72E000EA996 /* ItemInfoTableViewCell.swift in Sources */,
 				EEAED4BF258381D40051F99A /* AppDelegate.swift in Sources */,
@@ -489,6 +492,7 @@
 				EE18B6A5258904F8009D4D15 /* ToDoItemEntity.swift in Sources */,
 				EEE3CFB32584CB6800BB2156 /* UICollectionView+registerCell.swift in Sources */,
 				EEE3D002258770F200BB2156 /* DateInputTableViewCell.swift in Sources */,
+				EE69BE1B258B9E58008CD271 /* Date+StartOfDay.swift in Sources */,
 				EEE3CFC62584D14E00BB2156 /* ListItemCellViewModel.swift in Sources */,
 				EEE3CFFD2587709800BB2156 /* NonFocusableTextField.swift in Sources */,
 				EEE3CFAF2584CB1000BB2156 /* CellViewModel.swift in Sources */,
